@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACE TOURISM</title>
+    <link rel="stylesheet" href="css/destination.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-container">
+
+    
+    <nav>
+        <div class="nav-logo">
+            <a href="index.html"><img src="img/shared/logo.svg" alt="logo"></a>
+        </div>
+        <div class="hamburger-menu">
+            <img src="img/shared/icon-hamburger.svg" alt="menu" class="hamburger" onClick="openNav()">
+        </div>
+    </nav>
+        
+        <div class="nav-line"></div>
+        <div class="nav-links sidenav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li>
+                    <a href="index.html"><span class="bold">00</span> home</a>
+                </li>
+
+                <li>
+                    <a href="destination.html"><span class="bold">01</span> destination</a>
+                </li>
+
+                <li>
+                    <a href="crew.html"><span class="bold">02</span> crew</a>
+                </li>
+
+                <li>
+                    <a href="technology.html"><span class="bold">03</span> technology</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <article>
+           
+            <div class="subtitle">
+                <p><span>01</span> pick your destination</p>
+            </div>
+        <div class="flex-container">
+            <div>
+                <div class="planet">
+                    <img src="img/destination/image-moon.png" alt="moon" class="planet-img">
+                </div>
+            </div>
+
+            <div>
+                <div class="planet-list">
+                    <ul>
+                        <li class="moon active">
+                            moon
+                        </li>
+                        <li class="mars">
+                            <a href="planets/mars.html">mars</a>
+                            
+                        </li>
+                        <li class="europa">
+                            <a href="planets/europa.html">europa</a>  
+                        </li>
+                        <li class="titan">
+                            <a href="planets/titan.html">titan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="big-title">
+                    <p class="planet-title">moon</p>
+                </div>
+                <div class="text-container">
+                    <p class="text">
+                        See our planet as you've never seen it before. A
+                        perfect relaxing trip away top help regain
+                        perspective and come back refreshed. While
+                        you're there, take in some history by visiting the 
+                        Luna 2 and Apollo 01 landing sites.
+                    </p>
+                </div>
+                <div class="separation-line"></div>
+                <div class="distance-container">
+                    <div class="distance">
+                        <p>avg. distance</p>
+                        <p class="distance-value">384,400 km</p>
+                    </div>
+                    <div class="time">
+                        <p>est.travel time</p>
+                        <p class="time-value">3 days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </article>
+
+
+        <script src="js/script.js"></script>
+    </main>
+</body>
+</html>

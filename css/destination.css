@@ -1,0 +1,385 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-font:'Bellefair', serif;
+    --secondary-font:'Barlow Condensed', sans-serif;
+    --body-font:'Barlow', serif;
+    --font-color: #fff;
+    font-size: 16px;
+}
+
+body{
+    font-family: var(--body-font);
+    color: var(--font-color);
+    background: url("../img/destination/background-destination-tablet.jpg") no-repeat center center fixed;
+    width: 100%;
+    height: 105vh;
+    background-size: 100% 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.hamburger-menu{
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+}
+
+.hamburger-menu img:hover{
+    cursor: pointer;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(15px);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a{
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.bold{
+    font-weight: bold;
+}
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* main */
+
+
+.planet img{
+    display: block;
+    width: 170px;
+    height: 170px;
+    margin: auto;
+}
+
+.subtitle{
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2.7px;
+    margin-bottom: 25px;
+}
+
+
+
+.subtitle span{
+    color: rgba(255, 255, 255, 0.5);
+    padding-right: 5px;
+}
+
+.planet-list ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    color: #D0D6F9;
+    letter-spacing: 2.36px;
+    max-width: 425px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.planet-list ul li{
+    text-align: center;
+    margin: auto;
+    max-width: 425px;
+    display: inline-block;
+    text-align:left;
+}
+
+.planet-list a{
+    text-decoration: none;
+    color: #D0D6F9;
+}
+
+.planet-list a:hover{
+    color: white;
+    border-bottom: 3px solid white;
+    padding-bottom: 7px;
+}
+
+.active{
+    color: white;
+    border-bottom: 3px solid white;
+    padding-bottom: 7px;
+}
+
+
+.big-title{
+    font-family: var(--main-font);
+    font-size: 56px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text-container{
+    max-width: 570px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    /*margin-top: 25px;
+    margin-bottom: 25px;*/
+}
+.text{
+    font-size: 15px;
+    line-height: 25px;
+    color: #D0D6F9;
+    padding: 10px 22px 0 22px;
+    text-align: center;
+    margin: auto;
+    max-width: 570px;
+    display: inline-block;
+    text-align:center;
+}
+
+.separation-line{
+    width: 80%;
+    height: 1px;
+    background: #383B4B;
+    margin: auto;
+    display: block;
+    text-align:center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.distance, .time{
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    color: #D0D6F9;
+    margin-bottom: 30px;
+
+}
+
+.distance-value, .time-value{
+    font-family: var(--main-font);
+    font-size: 28px;
+    color: white;
+    padding-top: 15px;
+}
+
+
+@media screen and (min-width: 768px){
+
+    
+
+    .big-title{
+        font-size: 80px;
+    }
+
+    .subtitle{
+        font-size: 20px;
+        letter-spacing: 3.38px;
+        margin-top: 50px;
+        text-align: left;
+        margin-left: 50px;
+    }
+    
+    .planet-list{
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .planet img{
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .text{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .explore{
+        width: 242px;
+        height: 242px;
+    }
+
+    .explore a{
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+
+    .sidenav{
+        height: 96px;
+        width: 70%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        background: rgba(255, 255, 255, 0.04);
+    }
+    
+    .nav-links ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-links a:hover{
+        padding-bottom: 25px;
+    }
+    
+    .sidenav .closebtn{
+        display: none;
+    }
+
+    span.bold{
+        display : none;
+    }
+
+    .nav-container{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    
+
+    .nav-logo img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 30px 0 0 30px;
+    }
+
+    .distance-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .distance{
+        margin-right: 100px;
+    }
+
+
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        background: url("../img/destination/background-destination-desktop.jpg") no-repeat center center fixed;
+        background-size: 100% 100%;
+        min-height: 750px;
+    }
+
+    span.bold{
+        display: inline-block;
+    }
+
+    .nav-line{
+        width: 30%;
+        height: 1px;
+        background: #fff;
+        margin-left: 50px;
+    }
+
+    .nav-container{
+        margin-top: 50px;
+    }
+
+    .nav-logo img{
+        margin-top: 45px;
+    }
+
+    .subtitle{
+        font-size: 28px;
+        letter-spacing: 4.72px;
+    }
+
+    .planet img{
+        width: 445px;
+        height: 445px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .planet-list{
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .big-title{
+        font-size: 100px;
+    }
+
+    .text-container{
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .text{
+        text-align: left;
+    }
+
+    article{
+        display: block;
+    }
+
+    .flex-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        max-width: 1320px;
+    }
+}
