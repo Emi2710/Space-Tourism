@@ -46,7 +46,7 @@ nav{
     z-index: 1;
     top: 0;
     left: 0;
-    background: rgba(255,255,255, 0.3);
+    background: red;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
