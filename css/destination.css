@@ -44,8 +44,7 @@ nav{
     z-index: 1;
     top: 0;
     left: 0;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    background: #0B0D19;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
